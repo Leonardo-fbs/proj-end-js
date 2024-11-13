@@ -1,0 +1,163 @@
+@charset 'utf-8';
+ 
+#persona {
+    padding: 0px 10px;
+    height: auto;
+    word-break: break-all;
+}
+#persona .card {
+    padding: 0px;
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    transition: 3s;
+}
+
+#persona p {
+    order: 3;
+    display: none;
+}
+
+#persona .card figure {
+    width: 40%;
+}
+
+#persona .card h2 {
+    order: 2;
+    width: 50%;
+    height: 100%;
+}
+
+#persona .card figure img {
+    width: 100%;
+    border-radius: 0px;
+    padding: 15px;
+}
+
+p {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+
+@media screen and (min-width:768px) {
+
+    h2 {
+        display: none;
+    }
+
+    footer h2 {
+        display: block;
+    }
+
+    #persona {
+        margin-top: 50px;
+        padding: 0px 20px;
+        height: auto;
+    }
+
+    #persona p {
+        display: block;
+        width: 100%;
+        margin: 10px 0px;
+        font-size: 5vmin;
+		color: rgb(0, 50, 0);
+    }
+
+    #persona .card {
+        padding: 50px;
+        margin: 20px 0px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        flex-wrap: wrap;
+        transition: 3s;
+    }
+
+    #persona .card figure {
+        width: 100%;
+    }
+
+    #persona .card h2 {
+        order: 2;
+        width: 70%;
+        height: 100%;
+    }
+
+    #persona .card figure img {
+        width: 100%;
+        border-radius: 110%;
+        padding: 20px;
+    }
+
+    #persona .card:hover h2 {
+        color: rgb(0, 50, 0);
+    }
+
+    #persona .card:hover {
+        background-color: black;
+    }
+
+    .card:hover p {
+        color: green;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    #persona {
+        margin-top: 0px;
+        padding: 0px 20px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #persona p {
+        width: 100%;
+        margin: 0px 0px;
+        font-size: 3vmin;
+		color: rgb(0, 50, 0);
+    }
+
+    #persona .card {
+        height: 850px;
+        padding: 0px 0px 20px 0px;
+        margin: 20px 0px;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0);
+        flex-wrap: wrap;
+        transition: 3s;
+        width:24%;
+    }
+
+    #persona .card figure {
+        width: 100%;
+    }
+
+    #persona .card h2 {
+        order: 2;
+        width: 70%; 
+        height: 100%;
+    }
+
+    #persona .card figure img {
+        width: 100%;
+        border-radius: 110%;
+        padding: 10px;
+    }
+
+    #persona .card:hover h2 {
+        color: rgb(0, 50, 0);
+    }
+
+    #persona .card:hover {
+        background-color: black;
+    }
+
+    .card:hover p {
+        color: green;
+    }
+
+}

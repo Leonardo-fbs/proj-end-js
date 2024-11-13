@@ -1,0 +1,661 @@
+@charset 'utf-8';
+
+#award {
+    display: flex;
+    margin: 10px;
+    overflow: scroll;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+#award figure {
+    height: 100%;
+    padding: 15px;
+}
+
+#award img {
+    padding: 10px;
+}
+
+h2:nth-child(2) {
+    text-align: center;
+}
+
+form {
+    height: auto;
+    padding: 10px;
+    margin: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    float: left;
+}
+
+fieldset,
+legend {
+    float: left;
+}
+
+form legend {
+    font-size: 35px;
+    margin: 10px 0px 30px 0px;
+}
+
+p {
+    text-align: center;
+}
+
+label,
+input,
+legend {
+    width: 100%;
+    font-family: garait;
+    font-size: 22px;
+}
+
+input,
+textarea,
+select {
+    border: none;
+    border-bottom: 3px solid rgb(0, 50, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+    background-color: rgba(5, 130, 0, 0.5);
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 0px;
+}
+
+#sex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#sex legend {
+    text-align: center;
+
+}
+
+#sex span {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sex span label {
+    width: 70%;
+    height: 100%;
+}
+
+#sex span input {
+    width: 30%;
+    float: right;
+}
+
+#line {
+    display: flex;
+    justify-content: space-between;
+}
+
+#localization span {
+    width: 40%;
+    display: flex;
+}
+
+#localization span label {
+    width: 40%;
+}
+
+#localization span input,
+select {
+    width: 60%;
+}
+
+textarea {
+    width: 100%;
+}
+
+#file_img figure,
+label,
+img {
+    width: 100%;
+}
+
+.btn-finish {
+    font-family: monospace;
+    width: 100%;
+    height: 60px;
+    border: 10px groove rgb(0, 50, 0);
+    background-color: white;
+    color: rgb(0, 50, 0);
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.btn-finish:hover {
+    height: 70px;
+    border: 10px groove white;
+    background-color: rgb(0, 50, 0);
+    color: white;
+    font-size: 30px;
+}
+
+#register {
+    margin: 20px 0px;
+}
+
+@media screen and (min-width:768px) {
+
+    #closed {
+        display: none;
+    }
+    
+    #member {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 768px;
+        margin: 0;
+    }
+
+    #award {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 768px;
+        max-height: 785px;
+        margin: 0px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.616);
+    }
+
+    #award img {
+        width: 33%;
+    }
+
+    form {
+        padding: 20px;
+        margin: 15px;
+        background-color: unset;
+    }
+
+    fieldset,
+    legend {
+        width: 100%;
+        text-align: center;
+    }
+
+    form legend {
+        font-size: 45px;
+        margin: 50px 0px 50px 0px;
+    }
+
+    form p {
+        width: 100%;
+        display: flex;
+    }
+
+    form label,
+    input,
+    legend {
+        color: rgb(0, 100, 0);
+        font-weight: bold;
+        font-size: 45px;
+        width: 100%;
+    }
+
+    input[type=radio] {
+        width: 100%;
+        height: 100%;
+    }
+
+    p label {
+        width: 40%;
+    }
+
+    input,
+    textarea,
+    select {
+        border: none;
+        border-bottom: 3px solid rgb(0, 50, 0);
+        background-color: rgba(0, 50, 0, 0.3);
+    }
+
+    input:hover,
+    textarea:hover,
+    select:hover {
+        background-color: rgb(210, 210, 210, 0.8);
+    }
+
+    input:focus-visible,
+    textarea:focus-visible,
+    select:focus-visible {
+        outline-color: -webkit-focus-ring-black;
+        outline-style: auto;
+        outline-width: 0px;
+    }
+
+    #sex {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #sex legend {
+        text-align: center;
+
+    }
+
+    #sex span {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sex span label {
+        width: 70%;
+        height: 100%;
+    }
+
+    #sex span input {
+        width: 30%;
+        float: right;
+    }
+
+    #line {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #localization span {
+        width: 40%;
+        display: flex;
+    }
+
+    #localization span label {
+        width: 40%;
+    }
+
+    #localization span input,
+    select {
+        width: 60%;
+        font-size: 45px;
+    }
+
+    #text,
+    #file {
+        display: block;
+    }
+
+    textarea {
+        min-height: 500px;
+    }
+
+    #text label,
+    textarea {
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    #file_img figure,
+    label,
+    img {
+        width: 100%;
+    }
+
+    .btn-finish {
+        width: 100%;
+        height: 100px;
+        border: none;
+        background-color: black;
+        border-radius: 8px;
+        color: rgb(0, 50, 0);
+        font-size: 50px;
+        font-weight: 900;
+    }
+
+    .btn-finish:hover {
+        height: 150px;
+        border: none;
+        background-color: rgb(0, 50, 0);
+        color: black;
+        font-size: 60px;
+    }
+
+    #register {
+        margin: 20px 0px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    #member {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: auto;
+        margin: 30px 0px;
+    }
+
+    #award {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 100%;
+        height: auto;
+        margin: 0px;
+        padding: 10px;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    #award img {
+        width: 25%;
+    }
+
+    #open {
+        width: 100%;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    #open h2{
+        color: rgb(0, 100, 0);
+    }
+    
+    #closed {
+        display: block;
+        float: left;
+        position: absolute;
+        top: 4%;
+        left: 1%;
+    }
+
+    #curtain {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0);
+        position: fixed;
+        z-index: 1;
+        transition: 2s;
+        backdrop-filter: blur(3px);
+    }
+
+    form {
+        width: 90%;
+        height: 80%;
+        padding: 0px;
+        margin: 20px;
+    }
+
+    form::after {
+        content: "";
+        background: url('../img/begin.png');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        border-radius: 10px;
+    }
+
+    form legend {
+        font-size: 28px;
+        margin: 10px 0px;
+        text-align: start;
+        padding-left: 10px;
+        height: 5%;
+        color: black;
+    }
+
+    form label,
+    input {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+    }
+
+    label {
+        width: auto;
+        word-wrap: normal;
+    }
+
+    input {
+        width: 100%;
+        margin-left: 10px;
+        padding: 0px 10px;
+    }
+
+    input:hover,
+    textarea:hover,
+    select:hover {
+        background-color: unset;
+    }
+
+    #fatherAll {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 60%;
+    }
+
+    #line_fieldset {
+        display: flex;
+    }
+
+    fieldset {
+        width: 100%;
+        height: 100%;
+    }
+
+    #personal_information {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    #personal_information p {
+        width: 100%;
+        height: 19%;
+    }
+
+    #personal_information fieldset {
+        width: 100%;
+        height: 10%;
+    }
+
+    #personal_information p:nth-child(2),
+    #personal_information p:nth-child(3) {
+        display: flex;
+        width: 50%;
+    }
+
+    #sex {
+        width: 100%;
+        height: auto;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #sex legend,
+    #sex span {
+        color: black;
+        text-align: start;
+        height: auto;
+    }
+
+    #sex legend {
+        width: 20%;
+    }
+
+    #sex span {
+        width: 40%;
+    }
+
+    #sex span input[type=radio] {
+        float: left;
+        height: 25px;
+    }
+
+    #localization {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    #localization p:nth-child(3),
+    #localization p:nth-child(2) {
+        width: 48%;
+        display: flex;
+        height: 70px;
+    }
+
+    #line {
+        display: flex;
+        width: 60%;
+        height: 70px;
+    }
+
+    #line span {
+        display: flex;
+        width: 50%;
+    }
+
+    #line span input {
+        width: 100%;
+    }
+
+    #file {
+        width: 40%;
+        height: 70px;
+        display: flex;
+    }
+
+    #file_img label, #file label {
+        background-color: black;
+        color: green;
+        font-size: 15px;
+        font-family: sans-serif;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    #file label {
+        width: 100%;
+        height: 60px;
+        display: flex;
+    }
+
+    #text {
+        width: 100%;
+        order: 1;
+    }
+
+    #text label,
+    #text input {
+        width: 100%;
+    } 
+
+    #proof, #proof_img {
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    textarea {
+        max-height: 75%;
+        min-height: 33%;
+    }
+
+    #profile {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    #profile legend {
+        width: 100%;
+    }
+
+    #profile p {
+        width: 40%;
+        height: 70px;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    #file_img {
+        display: flex;
+        flex-direction: column;
+        float: left;
+    }
+
+    #file_img figure {
+        width: 100%;
+        height: 148px;
+        float: left;
+        display: flex;
+    }
+
+    #file_img img {
+        height: 160px;
+        width: 160px;
+    }
+
+    #file_img label {
+        width: 150px;
+        height: 25px;
+        margin: 5px 0px 10px 10px;
+    }
+
+    .btn-finish {
+        width: 35%;
+        height: 80px;
+        border: none;
+        background-color: black;
+        border-radius: 8px;
+        color: rgb(0, 50, 0);
+        font-size: 20px;
+        font-weight: 900;
+        margin: 0;
+        float: right;
+    }
+
+    .btn-finish:hover {
+        height: 80px;
+        border: solid 2px;
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        box-shadow: 0 0 2em rgb(0, 60, 0);
+    }
+
+    #register {
+        margin: 0px 10px;
+    }
+
+    #clear {
+        margin: 0px;
+    }
+
+}

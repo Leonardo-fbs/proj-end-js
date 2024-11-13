@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="aot, shingeki, kyojin, attack, titan, levi, mikasa, eren, armim, anime, ackerman">
+  <meta name="description"
+    content="Shingeki no Kyojin historia do anime, Personagens, governo e tudo sobre esse maravilhoso universo.">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Shingeki no Kyojin</title>
+  <link rel="icon" href="img/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/member.css">
+</head>
+
+<body>
+
+  <audio src="audio/open_season.mp3" autoplay loop></audio>
+
+  <header>
+    <figure id="logo" onclick="location.href='index.html';"></figure>
+    <h1>Shingeki no Kyojin</h1>
+    <nav id="menu_tablet">
+      <ul>
+        <li><a href="story.html"><i class="fa fa-book fa-3x" aria-hidden="true"></i></a></li>
+        <li><a href="persona.html"><i class="fa fa-id-card fa-3x" aria-hidden="true"></i></a></li>
+        <li><a href="government.html"><i class="fa fa-university fa-3x" aria-hidden="true"></i></a></li>
+        <li><a href="member.html"><i class="fa fa-user-circle fa-spinner fa-3x" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
+    <button id="btn-menu"><a href="#menu"><span>&#9776;</span></a></button>
+    <nav id="menu">
+      <a href="#" id="btn-fechar"> &#10060;</a>
+      <ul>
+        <a href="index.html">
+          <li>Home</li>
+        </a>
+        <a href="story.html">
+          <li>História</li>
+        </a>
+        <a href="persona.html">
+          <li>Personagens</li>
+        </a>
+        <a href="government.html">
+          <li>Governo</li>
+        </a>
+        <a href="member.html">
+          <li>Membros</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="member">
+      <h2>Por que ser membros ?</h2>
+      <p>Ao se tornar membros você terá acesso a todas nosssa redes socias quem lhe informarão sobre tudo de Aot (Attack
+        on Titan / Shingeki no Kyojin) em primeira mão as novidades e fan-arts. E participe de sorteios de brindes como
+        mangás, camisas, canecas e action figures. Veja alguns exemplos &#128071;&#127997;:
+      </p>
+      <figure id="award">
+        <img src="img/award/cellphone_case.png" alt="Capinha de celular com brasão da Divisão de reconhecimento">
+        <img src="img/award/action1.jpg" alt="Action Figure de Eren Yeager">
+        <img src="img/award/t_shirt.png" alt="Camisa do Eren escrita Tatakae">
+        <img src="img/award/mug.png" alt="Caneca com brasão da Divisão de reconhecimento">
+        <img src="img/award/mangas.jpg" alt="Mángas do Shingeki no Kyojin">
+        <img src="img/award/mug1.png" alt="Caneca dos personagens do Shingeki no Kyojin">
+        <img src="img/award/action.jpeg" alt="Action Figure do Levi Ackerman">
+        <img src="img/award/key_chain.png" alt="Pigente de uma lâmina usado no Shingeki no Kyojin">
+        <img src="img/award/funko_pop.png" alt="Pigente de uma lâmina usado no Shingeki no Kyojin">
+        <img src="img/award/moletom.png" alt="Pigente de uma lâmina usado no Shingeki no Kyojin">
+        <img src="img/award/pigente.png" alt="Pigente de uma lâmina usado no Shingeki no Kyojin">
+        <img src="img/award/quadro.png" alt="Pigente de uma lâmina usado no Shingeki no Kyojin">
+
+      </figure>
+    </section>
+
+    <a href="#" onclick="abrirModal()" id="open"><h2>Cadastrar-se</h2></a>
+    <section id="curtain">
+      <a href="#" onclick="fecharModal()" id="closed">&#10060;</a>
+      <form action="" method="GET">
+        <fieldset id="fatherAll">
+          <fieldset id="line_fieldset">
+            <fieldset id="personal_information">
+
+              <legend>&#128195; Informações pessoais</legend>
+
+              <p>
+                <label for="name">Nome:</label>
+                <input type="text" id="name">
+              </p>
+
+              <p>
+                <label for="age">idade:</label>
+                <input type="number" id="age">
+              </p>
+
+              <p>
+                <label for="birth" id="labelBirth">&#128197; Data de nascimento:</label>
+                <input type="date" id="birth">
+              </p>
+
+              <p>
+                <label for="cell">&#128241; Celular:</label>
+                <input type="number" id="cell" placeholder="(55) 99999-9999">
+              </p>
+
+              <p>
+                <label for="email">&#9993; Email:</label>
+                <input type="email" name="email" id="email" placeholder="shingekiNoKyojin@gmil.cm">
+              </p>
+
+              <fieldset id="sex">
+                <legend>Sexo</legend>
+                <span>
+                  <input type="radio" name="sexo" value="false" checked>
+                  <label for="sexo"> &#9794;Masculino</label>
+                </span>
+
+                <span>
+                  <input type="radio" name="sexo" value="true">
+                  <label for="sexo"> &#9792;Feminino</label>
+                </span>
+              </fieldset>
+
+            </fieldset>
+
+            <fieldset id="localization">
+              <legend>&#128204; Localização</legend>
+
+              <p>
+                <label for="city">&#127751; Cidade:</label>
+                <input type="text" id="city">
+              </p>
+
+              <p>
+                <label for="road">&#127966; Rua:</label>
+                <input type="text" id="road">
+              </p>
+
+              <p id="line">
+                <span>
+                  <label for="n">Nº</label>
+                  <input type="number" id="n">
+                </span>
+
+                <span>
+                  <label for="uf">UF:</label>
+                  <select id="uf">
+                    <option value=""></option>
+                    <option value="RS">RS</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    <option value="MG">MG</option>
+                  </select>
+                </span>
+              </p>
+
+              <p id="text">
+                <label for="information">Informe um ponto de referência:</label>
+                <textarea id="information" rows="10"></textarea>
+              </p>
+
+              <p id="file">
+                <label for="proof">&#128193;Anexar comprovante de residência:</label>
+                <input type="file" id="proof">
+              </p>
+            </fieldset>
+          </fieldset>
+          <fieldset id="profile">
+            <legend>&#128373;&#127997; Perfil</legend>
+
+            <div id="file_img">
+              <figure><img src="img/user_white.png" alt="foto de um anônimo"></figure>
+              <label for="upload-photo">Selecione a foto</label>
+              <input type="file" id="proof_img">
+            </div>
+
+            <p>
+              <label for="nickname">&#128100; Nickname:</label>
+              <input type="text" id="nickname">
+            </p>
+
+            <p>
+              <label for="password">&#128274; Senha:</label>
+              <input type="password" id="password">
+            </p>
+
+            <input onclick="validar()" type="button" id="register" class="btn-finish" value="Cadastrar">
+            <input type="reset" id="clear" class="btn-finish" value="Limpar formulário">
+          </fieldset>
+        </fieldset>
+      </form>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <nav id="social_network">
+      <h2>Redes Sociais Vinculadas</h2>
+      <ul>
+        <li>
+          <a target="_blanket" href="https://shingeki.tv/final/">
+            <i id="iconNet" class="fa fa-globe fa-3x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li>
+          <a target="_blanket" href="https://www.facebook.com/AttackOnTitan/">
+            <i id="iconFacebook" class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li>
+          <a target="_blanket" href="https://twitter.com/hajime_isayama?lang=pt">
+            <i id="iconTwitter" class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li>
+          <a target="_blanket" href="https://www.instagram.com/shingekinokyojinofficial/?hl=pt">
+            <i id="iconInstagram" class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li>
+          <a target="_blanket" href="">
+            <i id="iconYoutube" class="fa fa-youtube fa-3x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+    <address>
+      &#127758; 2021 - RS Gravataí Rua Dom Feliciano, 66 Na rua da farmácia. QI &copy; Desenvolvido por Leonardo Feijo
+      Barboza Santos,<br> &#128222; (51) 99999-9999
+    </address>
+  </footer>
+
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+
+</html>

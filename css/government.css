@@ -1,0 +1,183 @@
+@charset 'utf-8';
+ 
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+#shortcut{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70px;
+    z-index: 1;
+}
+
+#shortcut ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#shortcut ul li {
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    background-color: black;
+    width: 32%;
+    margin: 5px;
+    font-size: 30px;
+    position: sticky;
+    
+}
+
+#shortcut ul li a {
+    color: white;
+}
+
+#walls a {
+    font-size: 18px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#walls img {
+    width: 100%;
+    padding: 0px 15px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#walls a:hover {
+    color: rgb(0, 111, 0);
+}
+
+#wall_maria img,
+#wall_rose img,
+#wall_sheena img {
+    height: 200px;
+    width: auto;
+    clear: none;
+    float: left;
+    margin: 0;
+}
+
+#divisions img{
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    #shortcut {
+        display: none;
+    }
+
+    #walls img {
+        padding: 10px 30px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    
+    main {
+        overflow: hidden;
+    }
+
+    main h2 {
+        color: green;
+    }
+
+    #shortcut{
+        display: block;
+        width: 200px;
+        position: fixed;
+        overflow: visible;
+        height: 140px;
+        top: 77%;
+        left: 0.5%;
+    }
+    
+    #shortcut ul {
+        width: 100%;
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    
+    #shortcut ul li {
+        width: 100%;
+        height: 30%;
+        margin: 0px;
+        position: relative;
+    }
+    
+    #walls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #paradis img {
+        width: 50%;
+        float: left;
+        clear: none;
+    }
+
+    #walls a:hover {
+        color: rgb(0, 111, 0);
+    }
+    
+    #wall_maria img,
+    #wall_rose img,
+    #wall_sheena img {
+        height: 370px;
+        width: 100%;
+        clear: none;
+        float: left;
+        margin: 0;
+        border-radius: 0px;
+    }
+
+    #wall_maria,
+    #wall_rose, 
+    #wall_sheena {
+        width: 30%;
+    }
+
+    #divisions img{
+        width: 20%;
+        height: auto;
+        float: left;
+    }
+
+    #divisions h2{
+        width: 100%;
+        height: auto;
+        font-size: 30px;
+        text-align: center;
+        color: rgb(0, 100, 0);
+    }
+ 
+    #divisions p {
+        color: rgb(0, 100, 0);
+    }
+
+    #military_police_brigade, #garrison_division, #recognition_division {
+        width: 99%;
+        height: 300px;
+        font-size: 20px;
+        overflow: scroll;
+        overflow-x: hidden;
+        background: black;
+        margin: 5px;
+        border: solid 2px rgb(0, 100, 0);
+        direction: rtl;
+    }
+
+    #grades {
+        display: flex;
+    }
+
+    #grades p {
+        font-size: 20px;
+        color: black;
+    }
+}

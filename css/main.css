@@ -1,0 +1,556 @@
+@charset 'utf-8';
+
+/*Fontes*/ 
+@font-face {
+	font-family: forte;
+	src: url('../font/forte.TTF');
+}
+
+@font-face {
+	font-family: angel_wish;
+	src: url('../font/angel_wish.ttf');
+}
+
+@font-face {
+	font-family: garait;
+	src: url('../font/garait.TTF');
+}
+
+/*Propriedades Gerais*/
+* {
+	padding: 0%;
+	margin: 0%;
+	border: none;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	color: white;
+	font-family: angel_wish;
+	z-index: 0;
+}
+
+p {
+	font-size: 18px;
+	font-family: sans-serif;
+	text-align: justify;
+	padding: 15px;
+	margin: 0px;
+}
+
+
+
+h2 {
+	margin: 10px;
+	font-size: 40px;
+}
+
+a {
+	color: black;
+}
+
+body {
+	background: url('../img/background/season_one.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	animation: backgroundMobile 20s linear infinite alternate;
+}
+
+main, footer, header {
+	float: left;
+}
+
+/*Menu*/
+header {
+	width: 100%;
+	height: 70px;
+	background-color: black;
+	display: flex;
+	position: fixed;
+	z-index: 1;
+}
+
+#menu_tablet {
+	display: none;
+}
+
+#logo {
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/logo.png);
+	cursor: pointer;
+	background-position: center;
+	background-repeat: no-repeat;
+	float: left;
+	background-size: cover;
+	margin: 5px;
+}
+
+h1 {
+	width: 69%;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 9vmin;
+	margin: 0;
+	animation: menuMobile 2s linear infinite alternate;
+}
+
+#btn-menu {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	border-radius: 10px;
+	background-color: rgb(0, 120, 0, 0.5);
+	float: right;
+}
+
+#btn-menu span {
+	font-size: 30px;
+}
+
+#menu {
+	width: 100%;
+	height: 0%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	overflow: hidden;
+	float: left;
+}
+
+a {
+	color: rgb(0, 50, 0);
+}
+
+#menu:target {
+	height: 100%;
+	transition: 1s;
+}
+
+
+#btn-fechar {
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	float: right;
+}
+
+#menu ul {
+	width: 100%;
+	height: 100%;
+	clear: both;
+	text-align: center;
+}
+
+#menu ul li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15%;
+	padding: 3%;
+	font-size: 35px;
+}
+
+#menu ul li:hover {
+	background-color: rgb(0, 50, 0, 0.7);
+}
+
+main {
+	margin-top: 70px;
+	background-color: rgb(0, 50, 0, 0.5);
+}
+
+iframe {
+	width: 100%;
+	padding: 10px;
+}
+
+/*rodapé*/
+footer {
+	width: 100%;
+	background-color: rgb(0, 50, 0, 0.5);
+}
+
+#social_network ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+#social_network li {
+    width: 20%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#social_network li:hover {
+    background-color: black;
+    border-radius: 0px;
+	height: 70px;
+}
+
+address {
+	width: 100%;
+	padding: 5px;
+	font-family: forte;
+	font-size: 15px;
+	text-align: center;
+}
+
+@media screen and (min-width:768px) {
+
+	/*Tablet's*/
+	p {
+		font-size: 30px;
+		color: rgb(0, 100, 0);
+	}
+
+	h2 {
+		margin: 50px 0px 10px 20px;
+		font-size: 7vmin;
+		color: rgb(0, 50, 0);
+	}
+
+	body {
+		background-repeat: no-repeat;
+		background-size: contain;
+		animation: backgroundTablet 90s infinite alternate;
+	}
+
+	main {
+		width: 768px;
+		background-color: unset;
+	}
+
+	iframe {
+		height: 450px;
+		padding: 30px;
+	}
+
+	#btn-menu,
+	menu {
+		display: none;
+	}
+
+	header {
+		height: 100px;
+	}
+
+	#logo {
+		width: 80px;
+		height: 80px;
+		margin: 10px;
+	}
+
+	h1 {
+		height: 100%;
+		width: 380px;
+		font-size: 8vmin;
+		animation: menuTablet 3s linear infinite alternate;
+	}
+
+	#menu_tablet {
+		height: 100%;
+		width: 300px;
+		display: flex;
+	}
+
+	#menu_tablet ul {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	#menu_tablet i {
+		animation: menuTablet 3s linear infinite alternate;
+	}
+
+	footer {
+		background-color: rgba(0, 0, 0, 0.0);
+	}
+	
+	#social_network li {
+		height: 150px;
+	}
+	
+	#social_network li:hover {
+		height: auto;
+		background-color: rgb(0, 50, 0);
+		border-radius: 15x;
+		animation: rodar 3s linear infinite;
+	}
+
+	#social_network i {
+		color: black;
+	}
+
+	address {
+		font-size: 26px;
+		color: rgba(0, 50, 0);
+	}
+}
+
+@media screen and (min-width:1024px) {
+
+	/*Layout para desktop*/
+	p {
+		color: black;
+		font-size: 25px;
+	}
+
+	h2 {
+		margin: 10px;
+		font-size: 40px;
+		color: black;
+	}
+
+	body {
+		background-image: none;
+		animation:  none;
+	}
+
+	header {
+		height: 70px;
+		margin: 0px;
+		background-color: white;
+		justify-content: space-between;
+		align-items: center;
+		box-shadow: 0em 0em 1em black; /*analizar a possibilidade de colocar inset*/
+	}
+
+	#menu_tablet,
+	#btn-fechar,
+	#btn-menu {
+		display: none;
+	}
+
+	#logo {
+		width: 70px;
+		height: 70px;
+		background-image: url(../img/logo_black_white.png);
+		margin: 0px;
+	}
+
+	h1 {
+		width: 60%;
+		height: 50px;
+		font-size: 5.5vmin;
+		animation: menuMobile 1.5s linear infinite alternate;
+	}
+
+	#menu {
+		width: 65%;
+		height: 0%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		overflow: visible;
+	}
+
+	#menu ul {
+		height: 70px;
+		margin: 0;
+		clear: none;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	#menu ul li {
+		color: black;
+		width: auto;
+		height: 100%;
+		padding: 10px;
+	}
+
+	#menu ul li:hover {
+		background-color: rgb(0, 100, 0, 0.9);
+	}
+
+	main {
+		width: auto;
+	}
+
+	/*Home*/
+	#partner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #partner h2 {
+        width: 100%;
+    }
+
+    #partner p {
+        width: 40%;
+    }
+	iframe {
+		width: 600px;
+		padding: 15px;
+	}
+
+	footer {
+		background-color: none;
+	}
+
+	#social_network {
+        display: flex;
+        padding: 10px;
+        margin: 15px;
+    }
+
+    #social_network h2 {
+        margin: 20px 0px;
+		width: 50%;
+		font-size: 55px;
+    }
+
+	#social_network ul {
+		width: 50%;
+		margin: 0;
+	}
+	
+	#social_network li {
+		height: auto;
+	}
+
+	#social_network li:hover {
+		background-color: black;
+		border-radius: 0px;
+		transform: scale(1.5);
+		color: rgb(0, 100, 0);
+    }
+
+	#social_network i:hover {
+		color: rgb(0, 100, 0);
+    }
+	
+	address {
+		font-size: 18px;
+		color: black;
+	}
+
+	/*scroll*/
+	*::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		border: 1.5px solid rgb(0, 50, 0);
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		border: 2px solid black;
+	}
+
+	*::-webkit-scrollbar-track {
+		background: white;
+	}
+}
+
+/*Animations*/
+@keyframes backgroundMobile {
+	0% {
+		background-image: url('../img/background/season_one.jpg');
+	}
+
+	25% {
+		background-image: url('../img/background/season_two.jpg');
+	}
+
+	50% {
+		background-image: url('../img/background/season_three.jpg');
+	}
+
+	100% {
+		background-image: url('../img/background/season_four.jpg');
+	}
+}
+
+@keyframes backgroundTablet {
+	0% {
+		background-image: url('../img/background/dark1.jpg');
+	}
+
+	10% {
+		background-image: url('../img/background/dark1.jpg');
+	}
+
+	20% {
+		background-image: url('../img/background/dark2.png');
+	}
+
+	30% {
+		background-image: url('../img/background/dark3.png');
+	}
+
+	40% {
+		background-image: url('../img/background/dark4.jpg');
+	}
+
+	50% {
+		background-image: url('../img/background/dark5.jpg');
+	}
+
+	60% {
+		background-image: url('../img/background/dark6.jpg');
+	}
+
+	70% {
+		background-image: url('../img/background/dark7.jpg');
+	}
+
+	80% {
+		background-image: url('../img/background/dark8.jpg');
+	}
+
+	90% {
+		background-image: url('../img/background/dark9.jpg');
+	}
+
+	100% {
+		background-image: url('../img/background/dark.jpg');
+	}
+
+}
+
+@keyframes menuMobile {
+	from {
+		color: white;
+	}
+
+	to {
+		color: black;
+	}
+}
+
+@keyframes menuTablet {
+	from {
+		color: white;
+	}
+
+	to {
+		color: rgb(0, 50, 0);
+	}
+}
+
+@keyframes rodar {
+	from {
+		transform: rotateY();
+	}
+
+	to {
+		transform: rotateY(360deg);
+	}
+}
